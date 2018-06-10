@@ -6781,6 +6781,8 @@ var playlist_loader_PlaylistLoader = function (_EventHandler) {
   };
 
   PlaylistLoader.prototype.getInternalLoader = function getInternalLoader(context) {
+    console.log(this.loaders);
+    console.log(context.type);
     return this.loaders[context.type];
   };
 
