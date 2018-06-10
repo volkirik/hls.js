@@ -6776,13 +6776,15 @@ var playlist_loader_PlaylistLoader = function (_EventHandler) {
 
     context.loader = loader;
     this.loaders[context.type] = loader;
-
+    console.log(this.loaders);
+    console.log(loader);
+    console.log(context.type);
     return loader;
   };
 
   PlaylistLoader.prototype.getInternalLoader = function getInternalLoader(context) {
-    console.log(this.loaders);
-    console.log(context.type);
+    //console.log(this.loaders);
+    //console.log(context.type);
     return this.loaders[context.type];
   };
 
